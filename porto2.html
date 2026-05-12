@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Evan</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    /* TOMBOL KEMBALI */
+    .back-btn{
+      position:fixed;
+      top:20px;
+      left:20px;
+      background:#16202a;
+      color:white;
+      text-decoration:none;
+      padding:12px 20px;
+      border-radius:30px;
+      font-weight:600;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      transition:0.3s;
+      z-index:999;
+    }
+
+    .back-btn:hover{
+      background:#d4b76a;
+      color:#16202a;
+      transform:translateY(-2px);
+    }
+
+    .container{
+      width:1000px;
+      background:white;
+      display:flex;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+      overflow:hidden;
+      border-radius:10px;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      width:35%;
+      background:#16202a;
+      color:white;
+      padding:40px 30px;
+      position:relative;
+    }
+
+    .profile{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .profile img{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #d4b76a;
+    }
+
+    .section-title{
+      background:#d4b76a;
+      color:#16202a;
+      padding:10px 20px;
+      border-radius:30px;
+      display:inline-block;
+      margin:25px 0 15px;
+      font-weight:bold;
+      letter-spacing:1px;
+    }
+
+    .sidebar p{
+      margin-bottom:10px;
+      line-height:1.6;
+      color:#ddd;
+    }
+
+    .sidebar strong{
+      color:white;
+    }
+
+    /* MAIN CONTENT */
+    .main{
+      width:65%;
+      padding:50px;
+    }
+
+    .main h1{
+      font-size:48px;
+      color:#111;
+    }
+
+    .main h2{
+      font-size:28px;
+      color:#666;
+      font-weight:400;
+      margin-bottom:40px;
+    }
+
+    .content-section{
+      margin-bottom:35px;
+    }
+
+    .content-section h3{
+      font-size:24px;
+      margin-bottom:15px;
+      color:#222;
+      border-bottom:2px solid #ccc;
+      padding-bottom:5px;
+    }
+
+    .content-section p,
+    .content-section li{
+      color:#444;
+      line-height:1.8;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .edu-item,
+    .work-item{
+      margin-bottom:20px;
+    }
+
+    .year{
+      float:right;
+      color:#777;
+    }
+
+    @media(max-width:900px){
+
+      body{
+        padding-top:80px;
+      }
+
+      .container{
+        flex-direction:column;
+      }
+
+      .sidebar,
+      .main{
+        width:100%;
+      }
+
+      .main{
+        padding:35px;
+      }
+
+      .back-btn{
+        top:10px;
+        left:10px;
+        padding:10px 16px;
+        font-size:14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOMBOL KEMBALI -->
+  <a href="index.html" class="back-btn">
+    ← Kembali ke Portfolio Utama
+  </a>
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="profile">
+        <img src="WhatsApp Image 2025-07-24 at 10.12.12.jpeg" alt="Profile">
+      </div>
+
+      <div>
+        <div class="section-title">DATA DIRI</div>
+
+        <p><strong>Nama:</strong><br> Evan Dwika Isfandra</p>
+
+        <p><strong>Tempat / Tanggal Lahir:</strong><br> Malang, 18 Mei 2008</p>
+
+        <p><strong>Status:</strong><br> Pelajar SMK</p>
+
+        <p><strong>Kewarganegaraan:</strong><br> Indonesia</p>
+      </div>
+
+      <div>
+        <div class="section-title">KONTAK</div>
+
+        <p>📞 +62 881-0275-76682</p>
+        <p>✉️ evandwika05@gmail.com</p>
+        <p>📍 Malang, Jawa Timur</p>
+      </div>
+
+      <div>
+        <div class="section-title">SOSIAL MEDIA</div>
+
+        <p>Instagram : @evan</p>
+        <p>Github : github.com/evan</p>
+      </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <h1>EVAN</h1>
+      <h2>Web Developer</h2>
+
+      <div class="content-section">
+        <h3>TENTANG SAYA</h3>
+
+        <p>
+          Saya adalah siswa SMK yang tertarik pada dunia teknologi,
+          pemrograman web. Saya memiliki minat dalam pengembangan
+          website, desain modern, dan komunikasi publik.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h3>PENDIDIKAN</h3>
+
+        <div class="edu-item">
+          <strong>SMKN 5 Malang</strong>
+          <span class="year">2023 - Sekarang</span>
+
+          <p>Jurusan Rekayasa Perangkat Lunak</p>
+        </div>
+
+        <div class="edu-item">
+          <strong>SMPN 13 Malang</strong>
+          <span class="year">2020 - 2023</span>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h3>PENGALAMAN</h3>
+
+        <div class="work-item">
+          <strong>Project Website Sekolah</strong>
+
+          <ul>
+            <li>Membuat website modern menggunakan HTML & CSS</li>
+            <li>Belajar desain UI/UX sederhana</li>
+            <li>Mengembangkan tampilan responsive</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h3>KEMAMPUAN</h3>
+
+        <ul>
+          <li>HTML & CSS</li>
+          <li>PHP Dasar</li>
+          <li>Public Speaking</li>
+          <li>Desain UI Modern</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
